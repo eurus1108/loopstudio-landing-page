@@ -1,0 +1,16 @@
+$color-gray-100: hsl(0, 0%, 100%);
+$color-gray-200: hsl(0, 0%, 41%);
+$color-gray-300: hsl(0, 0%, 55%);
+$color-gray-400: hsl(0, 0%, 0%);
+$color-transparent-overlay-100: rgba($color-gray-400, 0.0001);
+$color-transparent-overlay-200: rgba($color-gray-400, 0.6019);
+
+$color-text-default: $color-gray-400;
+$color-text-light: $color-gray-100;
+$color-background-default: $color-gray-100;
+$color-background-dark: $color-gray-400;
+$color-transparent-background-light: rgba($color-gray-100, 0.7507);
+$color-linear-gradient-default: linear-gradient(
+  $color-transparent-overlay-100,
+  $color-transparent-overlay-200
+);
