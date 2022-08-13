@@ -5,6 +5,7 @@
   top: 0;
   left: 0;
   right: 0;
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,13 +14,29 @@
   max-width: 115.8rem;
   width: 100%;
 
+  @include breakpoint-down(small) {
+    padding: {
+      top: 4rem;
+    }
+  }
+
   & &__logo {
     width: 19.2rem;
     height: 3.2rem;
     @include cover-background("./assets/logo.svg");
+
+    @include breakpoint-down(small) {
+      max-width: 14.4rem;
+      width: 100%;
+      height: 2.4rem;
+    }
   }
 
   & &__nav {
+    @include breakpoint-down(medium) {
+      display: none;
+    }
+
     .header-menu {
       position: relative;
       margin: {
@@ -35,20 +52,20 @@
         width: 2.4rem;
         height: 0.2rem;
         background-color: $color-background-default;
-        transition: transform 400ms ease-in;
+        transition: transform 500ms ease;
       }
 
       &:hover::after {
         transform: scale(1);
       }
+    }
 
-      .header-nav-link {
-        line-height: 2.5rem;
-        color: $color-text-light;
+    .header-nav-link {
+      line-height: 2.5rem;
+      color: $color-text-light;
 
-        &:focus {
-          outline: none;
-        }
+      &:focus {
+        outline: none;
       }
     }
   }
