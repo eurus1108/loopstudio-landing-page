@@ -1,7 +1,10 @@
 @use "../abstract/" as *;
 
 .showcase {
-  padding: 9.6rem 0;
+  padding: 9.6rem 0 7.4rem;
+  margin: {
+    bottom: 9.6rem;
+  }
 
   @include breakpoint-up(large) {
     padding: 18.4rem 0;
