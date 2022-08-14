@@ -1,11 +1,12 @@
-$color-gray-100: hsl(0, 0%, 100%);
-$color-gray-200: hsl(0, 0%, 41%);
-$color-gray-300: hsl(0, 0%, 55%);
-$color-gray-400: hsl(0, 0%, 0%);
+$color-gray-100: #ffffff;
+$color-gray-200: #8c8c8c;
+$color-gray-300: #696969;
+$color-gray-400: #000000;
 $color-transparent-overlay-100: rgba($color-gray-400, 0.0001);
 $color-transparent-overlay-200: rgba($color-gray-400, 0.6019);
 
 $color-text-default: $color-gray-400;
+$color-text-subtle: $color-gray-300;
 $color-text-light: $color-gray-100;
 $color-background-default: $color-gray-100;
 $color-background-dark: $color-gray-400;
