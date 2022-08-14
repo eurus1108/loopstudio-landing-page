@@ -22,3 +22,13 @@ h4 {
   font-family: $font-family-headings;
   font-weight: 300;
 }
+
+h2 {
+  font-size: $font-size-400;
+  line-height: 3.2rem;
+
+  @include breakpoint-up(medium) {
+    font-size: $font-size-600;
+    line-height: 4.8rem;
+  }
+}

@@ -11,7 +11,5 @@ $color-text-light: $color-gray-100;
 $color-background-default: $color-gray-100;
 $color-background-dark: $color-gray-400;
 $color-transparent-background-light: rgba($color-gray-100, 0.7507);
-$color-linear-gradient-default: linear-gradient(
-  $color-transparent-overlay-100,
-  $color-transparent-overlay-200
-);
+$color-linear-gradient-default: $color-transparent-overlay-100,
+  $color-transparent-overlay-200;

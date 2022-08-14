@@ -69,3 +69,41 @@
     }
   }
 }
+
+.button {
+  display: block;
+  margin-right: -0.1rem;
+  padding: 1.2rem;
+  max-width: 15.7rem;
+  width: 100%;
+  font-size: $font-size-100;
+  text-align: center;
+  line-height: 1.4rem;
+  @include letter-spacing(35.71);
+  border: 0.5px solid $color-background-dark;
+  transition: all 400ms ease;
+
+  &:hover {
+    color: $color-text-light;
+    background-color: $color-background-dark;
+  }
+
+  @include breakpoint-up(large) {
+    &.button--inverse {
+      color: $color-text-light;
+      background-color: $color-background-dark;
+
+      &:hover {
+        color: $color-text-default;
+        background-color: transparent;
+      }
+    }
+  }
+
+  @include breakpoint-down(xsmall) {
+    position: absolute;
+    bottom: 2.2rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
