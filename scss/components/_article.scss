@@ -1,0 +1,98 @@
+@use "../abstract/" as *;
+
+.article {
+  width: 100%;
+  padding: 9.6rem 2.4rem 9.6rem;
+
+  @include breakpoint-up(large) {
+    @include center-block;
+    padding: {
+      top: 16rem;
+    }
+    max-width: 115.9rem;
+
+    & &__container {
+      position: relative;
+      display: flex;
+    }
+  }
+
+  & &__img-container {
+    margin: {
+      bottom: 4.8rem;
+    }
+
+    img {
+      vertical-align: middle;
+      width: 100%;
+    }
+
+    @include breakpoint-up(large) {
+      margin: 0;
+
+      .mobile-img {
+        display: none;
+      }
+    }
+
+    @include breakpoint-down(medium) {
+      .desktop-img {
+        display: none;
+      }
+    }
+  }
+
+  .content-container {
+    @include center-block;
+    max-width: 48rem;
+    width: 100%;
+
+    .text-content {
+      @include breakpoint-down(medium) {
+        text-align: center;
+      }
+
+      h2 {
+        margin: {
+          bottom: 1.6rem;
+        }
+        font-size: $font-size-400;
+        line-height: 3.2rem;
+      }
+
+      p {
+        line-height: 2.5rem;
+        color: $color-text-subtle;
+      }
+
+      @include breakpoint-up(medium) {
+        h2 {
+          margin: {
+            bottom: 2.5rem;
+          }
+          font-size: $font-size-600;
+          line-height: 4.8rem;
+        }
+      }
+    }
+
+    @include breakpoint-up(large) {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      max-width: 54.1rem;
+      background-color: $color-background-default;
+
+      .text-content {
+        margin: {
+          top: 9.6rem;
+          left: 9.6rem;
+        }
+      }
+    }
+
+    @include breakpoint-down(small) {
+      max-width: 27.9rem;
+    }
+  }
+}
