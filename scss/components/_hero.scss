@@ -20,6 +20,10 @@
     }
   }
 
+  @include breakpoint-up(xlarge) {
+    aspect-ratio: 2.22/1;
+  }
+
   & &__container {
     padding: 22.6rem 2.3rem 0;
 
