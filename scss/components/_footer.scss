@@ -9,6 +9,12 @@
       left: 0.1rem;
     }
 
+    @include breakpoint-up(medium) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+
     .f-right {
       margin: {
         bottom: 4.8rem;
@@ -38,12 +44,29 @@
         }
 
         .header-nav-link {
+          position: relative;
           margin: {
             right: 0.1rem;
           }
           font-size: $font-size-200;
           line-height: 2.5rem;
           color: $color-text-light;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -0.8rem;
+            left: 50%;
+            transform: translateX(-50%) scaleX(0);
+            width: 2.4rem;
+            height: 0.2rem;
+            background-color: $color-background-default;
+            transition: transform 300ms ease;
+          }
+
+          &:hover::after {
+            transform: translateX(-50%) scaleX(1);
+          }
         }
       }
     }
@@ -86,6 +109,8 @@
     }
 
     .footer__copyright {
+      text-align: center;
+
       .copyright-text {
         font-size: $font-size-200;
         line-height: 2.5rem;
