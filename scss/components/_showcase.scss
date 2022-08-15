@@ -7,7 +7,10 @@
     bottom: 9.6rem;
   }
 
-  @include breakpoint-up(large) {
+  @include breakpoint-up(medium) {
+    margin: {
+      bottom: 0;
+    }
     padding: 18.4rem 0;
   }
 
