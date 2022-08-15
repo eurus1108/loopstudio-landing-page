@@ -88,18 +88,6 @@
     background-color: $color-background-dark;
   }
 
-  @include breakpoint-up(large) {
-    &.button--inverse {
-      color: $color-text-light;
-      background-color: $color-background-dark;
-
-      &:hover {
-        color: $color-text-default;
-        background-color: transparent;
-      }
-    }
-  }
-
   @include breakpoint-down(xsmall) {
     position: absolute;
     bottom: 0;
