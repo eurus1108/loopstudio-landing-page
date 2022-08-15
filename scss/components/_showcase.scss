@@ -1,6 +1,7 @@
 @use "../abstract/" as *;
 
 .showcase {
+  position: relative;
   padding: 9.6rem 0 7.4rem;
   margin: {
     bottom: 9.6rem;

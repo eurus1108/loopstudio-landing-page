@@ -11,7 +11,7 @@
   background-image: url($image-src);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: left top;
 }
 
 @mixin letter-spacing($val) {
